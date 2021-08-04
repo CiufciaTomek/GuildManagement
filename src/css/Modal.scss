@@ -1,0 +1,174 @@
+.modal {
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    .modal-content {
+        margin: 30px auto;
+        height: 850px;
+        width: 900px;
+        max-height: 800px;
+        background-color: #0a0a0b;
+        color: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: inset 0px 0px 5px #717171;
+        max-width: 300px;
+
+        @media screen and (min-width: #{$screen-sm-min}) {
+            max-width: 900px;
+        }
+
+        .modal-top {
+            text-align: end;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid;
+
+            .modal-btn {
+                cursor: pointer;
+                margin-left: 5px;
+            }
+
+            .modal-btn:hover {
+                opacity: 0.7;
+            }
+        }
+        .wrap-element {
+            display: flex;
+            margin-bottom: 15px;
+            flex-direction: column;
+            overflow: overlay;
+
+            @media screen and (min-width: #{$screen-sm-min}) {
+                overflow: auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                margin-bottom: 15px;
+                flex-direction: row;
+            }
+
+            .list-element {
+                margin-bottom: 5px;
+
+                @media screen and (min-width: #{$screen-sm-min}) {
+                    width: 16%;
+                }
+
+                .delete-item {
+                    .modal-btn-delete {
+                        color: #dc3545;
+                    }
+
+                    .modal-btn-delete:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .playerlist-element {
+                width: auto;
+
+                @media screen and (min-width: #{$screen-sm-min}) {
+                    width: 33%;
+                }
+            }
+
+            .list-element:hover {
+                opacity: 0.7;
+            }
+        }
+
+        .wrap-element::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        .modal-form {
+            display: flex;
+            margin-bottom: 15px;
+
+            input {
+                width: auto;
+                padding: 0px 20px 0px 30px;
+
+                @media screen and (min-width: #{$screen-sm-min}) {
+                    width: 25%;
+                }
+            }
+
+            .modal-input-add {
+                width: 50px;
+                height: 50px;
+                color: #2ae654;
+                padding: 0;
+                cursor: pointer;
+            }
+        }
+
+        .btns {
+            display: flex;
+            p {
+                width: 119px;
+
+                @media screen and (min-width: #{$screen-sm-min}) {
+                    width: 32%;
+                }
+            }
+        }
+    }
+
+    select {
+        outline: none;
+        border: none;
+        background-color: rgb(38, 41, 43);
+        height: 50px;
+        padding: 0 20px 0 20px;
+        color: rgb(168, 160, 149);
+    }
+
+    input.discord-command {
+        border-radius: 0px;
+        display: unset;
+    }
+
+    .create-set-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: stretch;
+        height: 100%;
+        justify-content: space-evenly;
+
+        @media screen and (min-width: #{$screen-sm-min}) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            max-height: 400px;
+            justify-content: space-around;
+            align-items: stretch;
+            align-content: stretch;
+            padding: 10px 50px 30px 50px;
+        }
+
+        .create-set-content-title {
+            margin-bottom: 10px;
+        }
+
+        select {
+            @media screen and (min-width: #{$screen-sm-min}) {
+                width: 49%;
+            }
+        }
+
+        input {
+            padding: 0 30px 0 20px;
+            
+            @media screen and (min-width: #{$screen-sm-min}) {
+                width: 49%;
+            }
+        }
+    }
+}
+
+.modal-show {
+    display: block;
+}

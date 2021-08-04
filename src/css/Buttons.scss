@@ -1,0 +1,51 @@
+.add-btn {
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 5px #27ae60;
+    border-radius: 32px;
+    font-weight: 500;
+    cursor: pointer;
+    list-style: none;
+    margin: 5px;
+}
+
+.add-btn:hover {
+    box-shadow: inset 0 0 5px #27ae60;
+    background: #053519;
+}
+
+.remove-btn {
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 5px 2px #c71111bf;
+    border-radius: 32px;
+    font-weight: 500;
+    cursor: pointer;
+    list-style: none;
+    margin: 5px;
+}
+
+.remove-btn:hover {
+    box-shadow: inset 0 0 5px 2px #c71111bf;
+    background: #610a0abf;
+}
+
+.edit-btn {
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 5px 2px #ce9619;
+    border-radius: 32px;
+    font-weight: 500;
+    cursor: pointer;
+    list-style: none;
+    margin: 5px;
+}
+
+.edit-btn:hover {
+    box-shadow: inset 0 0 5px 2px #ce9619;
+    background: #ad7804bf;
+}
+
+.copy-btn {
+    cursor: pointer;
+}

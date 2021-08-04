@@ -1,0 +1,83 @@
+.container-regear {
+    display: flex;
+    background-color: rgb(24, 26, 27);
+    padding: 5px 10px 5px 10px;
+    width: 1260px;
+    max-width: 1260px;
+    color: #ffffff;
+
+    @media screen and (min-width: #{$screen-sm-min}) {
+        padding: 30px 30px 30px 30px;
+    }
+
+    .regear-content {
+        width: 100%;
+        .regear {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-bottom: 15px;
+
+            @media screen and (min-width: #{$screen-sm-min}) {
+                flex-direction: row;
+                padding: 20px;
+            }
+
+            .btn-group {
+                display: flex;
+
+                .btn-apply {
+                    padding: 5px 10px;
+                    background: #1f632e;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    margin: 15px;
+                }
+
+                .btn-apply:hover {
+                    background: #277939;
+                }
+
+                .btn-decline {
+                    padding: 5px 15px;
+                    background: #b62b12;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    margin: 15px;
+                }
+
+                .btn-decline:hover {
+                    background: #912917;
+                }
+            }
+        }
+
+        .filters {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+
+            @media screen and (min-width: #{$screen-sm-min}) {
+                flex-direction: row;
+                align-items: baseline;
+                margin: 0;
+            }
+
+            select {
+                outline: none;
+                border: none;
+                background-color: #26292b;
+                height: 50px;
+                padding: 0 20px 0 20px;
+                margin: 0px 10px 10px 10px;
+                color: #a8a095;
+            }
+
+            p {
+                cursor: pointer;
+            }
+        }
+    }
+}

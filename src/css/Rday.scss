@@ -1,0 +1,78 @@
+.container-declarations {
+    background-color: rgb(24, 26, 27);
+    padding: 0px 5px 30px 5px;
+    width: 1260px;
+    max-width: 1260px;
+    color: #ffffff;
+
+    @media screen and (min-width: #{$screen-sm-min}) {
+        padding: 25px 100px 70px 100px;
+    }
+
+    .declaration-top {
+        text-align: center;
+        padding: 25px 0;
+        font-size: 22px;
+    }
+
+    .declaration-content {
+        padding: 50px 40px 70px 40px;
+
+        .rday-content-top {
+            text-align: end;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+    }
+
+        .declaration {
+            align-items: center;
+            margin-bottom: 15px;
+            border-radius: 45px;
+            padding: 10px 0;
+
+            @media screen and (min-width: #{$screen-sm-min}) {
+                padding: 0 20px;
+            }
+
+            p {
+                margin: 5px;
+
+                @media screen and (min-width: #{$screen-sm-min}) {
+                    margin: 0;
+                }
+            }
+
+            li {
+                padding: 5px 30px!important;
+            }
+
+            .item {
+                width: 55px;
+            }
+
+            .edit-ico {
+                cursor: pointer;
+            }
+        }
+
+    .Tank {
+        box-shadow: 0 0 5px 2px #2f80ed;
+    }
+
+    .Rdps {
+        box-shadow: 0 0 5px 2px #EB5757;
+    }
+
+    .Mdps {
+        box-shadow: 0 0 5px 2px #eb5757bf;
+    }
+
+    .Healer {
+        box-shadow: 0 0 5px 2px #27AE60;
+    }
+    .Support {
+        box-shadow: 0 0 5px 2px #BB6BD9;
+    }
+
+}

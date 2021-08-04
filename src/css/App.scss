@@ -1,0 +1,13 @@
+.App {
+  height: 100%;
+}
+
+.container-app {
+  background-image: linear-gradient(to left, #471a77, #422380, #3c2a89, #333292, #26399b);
+  width: 100%;
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
